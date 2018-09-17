@@ -10,6 +10,15 @@ data class AccountListResponse(
         val data: List<AccountResponseData>
 )
 
+data class AssetResponse(
+        val data: List<AssetReceipt>
+)
+
+data class AssetReceipt(
+        val receipt: Receipt,
+        val asset: Asset
+)
+
 data class AccountResponseData (
         val receipt: Receipt,
         val account: Account
@@ -26,4 +35,10 @@ data class Receipt (
 
 data class Account(
         val id: String
+)
+
+data class Asset(
+        val id: String,
+        val code: String,
+        val limit: Int
 )

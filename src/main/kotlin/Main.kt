@@ -1,6 +1,7 @@
 import br.com.swipe.context.EnvironmentFactory
 import br.com.swipe.context.createAccount
 import br.com.swipe.context.getAllAccounts
+import br.com.swipe.context.getAssets
 import br.com.swipe.models.Lang
 
 fun main(args: Array<String>) {
@@ -11,5 +12,6 @@ fun main(args: Array<String>) {
 
     val account = wallet.createAccount()
     val getAccount = wallet.getAllAccounts()
+    val getAssets = wallet.getAssets()
 
 }
